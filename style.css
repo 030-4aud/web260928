@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang&family=Noto+Serif+KR:wght@200..900&display=swap');
+
+html {
+  font-family: "Gowun Batang", sans-serif;
+  font-size : 15px;
+  font-weight: 100px;
+}
+
+footer{
+  font-size: 0.7rem;
+}
+
+article {
+  width: 400px;
+  hight : 700px;
+  text-align : center;
+  border : 3px solid yellow;
+  display : inline-block;
+  background-color : lightgray;
+}
+
+article:first-child{
+  background-color: gray;
+}
+
+article: last-child{
+  background-color: yellow;
+}
+
+article div {
+  width : 250px;
+  border : 2px solid black;
+  padding: 10px 20px;
+  margin: 10px;
+  display : inline-block;
+  line-height: 1.6;
+}
+
+article div::before {
+  content: '[영화소개]';
+  font-weight : bold;
+  color : darkgreen;
+}
+
+article div::after {
+  content: '(생략)';
+  font-style : italic;
+  color: lightgreen;
+}
+
+h3{
+  background-color : lightgray;
+  font-variant: small-caps;
+}
+
+/*a{
+  text-decoration : none;
+}
+*/
+
+a:hover {
+  /*text-decoration : underline;*/
+  background-color : blue;
+  color : white;
+}
+
+a:active {
+  backgrounf-color : hotpink;
+  color : white;
+}
+
+a:visited {
+  text-decoration : underline;
+  color: orange;
+}
+
+div#header_title {
+  display : block;
+  width : 100vw;
+  text-align : center;
+  color : white;
+  background-color : black;
+  font-family: "Noto Serif KR", sans-serif;
+  font-size : 3rem;
+}
